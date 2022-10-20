@@ -1,10 +1,10 @@
-Hello World
-  
+
+  ## HelloWorld
   <br/>
   [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
   
   ## Description 
-  To say hi 
+  This project allows a first time developer to write basic code such as hello World
 
 
   ## Table of Contents
@@ -21,7 +21,7 @@ Hello World
   N/A
 
   ## Usage
-  Get first time coders experience
+  Entry level devlopers to write code
 
   ## License
   [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -37,6 +37,6 @@ Hello World
   ## Questions
 
   - Github username: [mkelly3](https://github.com/mkelly3)
-  - Contact Email: mkelly380@gmail.com
+  - Contact Email: mkelly5380@gmail.com
 
 
