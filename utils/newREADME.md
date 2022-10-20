@@ -1,10 +1,10 @@
 
-  ## HelloWorld
-  <br/>
-  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+  ## Hello World
+  
+  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
   
   ## Description 
-  This project allows a first time developer to write basic code such as hello World
+  To say hi to the world
 
 
   ## Table of Contents
@@ -21,15 +21,15 @@
   N/A
 
   ## Usage
-  Entry level devlopers to write code
+  For entry level developers to write their first lines of code
 
   ## License
-  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-  Apache 2.0
+  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+  GNU GPLv3
 
   ## Contributing
 
-  Morgan Kelly
+  N/A
 
   ## Tests
   N/A
