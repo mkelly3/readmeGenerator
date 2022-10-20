@@ -3,14 +3,10 @@ const fs = require("fs");
 const util = require("util");
 const inquirer = require("inquirer");
 const generateReadme = require("./utils/generateMarkdown");
-const { async } = require("rxjs");
 const writeFileAsync = util.promisify(fs.writeFile);
 
-// TODO: Create an array of questions for user input
 
-function promptUser(){
-inquirer
-  .prompt([
+const questions = [
     {
       type: 'input',
       message: 'What is the name of your project?',
@@ -27,9 +23,17 @@ inquirer
       name: 'usage',
     },
     {
-        type: 'input',
-        message: 'Please enter the licesne for thie project',
-        name: 'license',
+      type: "list",
+      name: "license",
+      message: "Chose the appropriate license for this project: ",
+      choices: [
+          "Apache",
+          "Academic",
+          "GNU",
+          "ISC",
+          "MIT",
+          "Mozilla",
+          "Open"
       },
       {
         type: 'input',
@@ -76,25 +80,29 @@ inquirer
         name: 'email',
       }  
 
-  ])
-  .then((response) => {
-   writeToFile("generateReadMe.md",response)
-  }
-  );
+  ]
 
+function getLicense(value){
+  
 }
-// promptUser();
+
 
 // TODO: Create a function to write README file
-async function writeToFile(fileName, data) {
-  console.log(data);
-   await writeFileAsync(fileName,data)
+function writeToFile(fileName, data) {
+  writeFileAsync(fileName, generateMarkdown(data), function (err) {
+    if (err) {
+        return console.log(err);
+    }
+});
+
 }
 
 // TODO: Create a function to initialize app
 function init() {
-    // writeToFile()
-    promptUser();
+  inquirer.prompt(questions).then((data) => {
+    response = JSON.stringify(data,null, "");
+    writeToFile(generateReadme,response);
+  })
 }
 
 // Function call to initialize app
