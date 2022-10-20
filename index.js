@@ -27,13 +27,16 @@ const questions = [
       name: "license",
       message: "Chose the appropriate license for this project: ",
       choices: [
-          "Apache",
-          "Academic",
-          "GNU",
+          "Apache 2.0",
+          "GNU GPLv3",
+          "GNU LGPLv3",
+          "Boost Software 1.0",
           "ISC",
           "MIT",
           "Mozilla",
-          "Open"
+          "Open",
+          "N/A"
+      ]
       },
       {
         type: 'input',
@@ -44,25 +47,6 @@ const questions = [
         type: 'input',
         message: 'Enter information regarding how to install this project',
         name: 'install',
-      },
-      {
-        type: 'list',
-        message: 'What badges would you like to display?',
-        name: 'badges',
-        choices: [
-            "Language Count",
-            "Top Language",
-            "Code Size",
-            "Repo Size",
-            "Issues",
-            "Issues Closed",
-            "Release Version by Date",
-        ]
-      },
-      {
-        type: 'input',
-        message: 'Please enter a Table of Contents',
-        name: 'table',
       },
       {
         type: 'input',
@@ -83,13 +67,48 @@ const questions = [
   ]
 
 function getLicense(value){
-  
+  if(value === "Apache 2.0"){
+    return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+  }
+  else if(value === "GNU GPLv3"){
+
+    return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
+  }
+
+  else if(value ==="GNU LGPLv3"){
+    return "[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)";
+
+  }
+  else if(value ==="Boost Software 1.0"){
+    return "[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)";
+
+  }
+  else if(value === "ISC"){
+    return "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)";
+
+  }
+  else if(value ==="MIT"){
+
+    return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+  }
+  else if(value ==="Mozilla" ){
+    return "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
+
+  }
+  else if(value ==="Open"){
+    return "[![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)](https://opendatacommons.org/licenses/odbl/)";
+
+  }
+  else if(value === "" || value ==="N/A"){
+    return;
+  }
+
 }
 
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  writeFileAsync(fileName, generateMarkdown(data), function (err) {
+  writeFileAsync(fileName,generateReadme(data), function(err) {
     if (err) {
         return console.log(err);
     }
@@ -100,9 +119,9 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
   inquirer.prompt(questions).then((data) => {
-    response = JSON.stringify(data,null, "");
-    writeToFile(generateReadme,response);
-  })
+    data.getLicense = getLicense(data.license);
+    writeToFile("./utils/newREADME.md",data);
+  });
 }
 
 // Function call to initialize app

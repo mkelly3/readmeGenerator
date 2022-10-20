@@ -1,7 +1,7 @@
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `#
+  return `
 
   # Project Title
   ${data.title}
@@ -24,7 +24,7 @@ function generateMarkdown(data) {
   # License
   ${data.license}
 
-  # Contributers
+  # Contributing
 
   ${data.contributing}
 
