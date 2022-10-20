@@ -1,39 +1,44 @@
 
 
-  # Project Title
+  ## Project Title
   HelloWorld
-  [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
-
- 
-## Table of Contents
-- [Description](#description)
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Contributing](#contributing)
-- [Tests](#tests)
-- [Questions](#questions)
+  <br/>
+  [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+  
+  ## Description 
+  This product allows first time coders to consolelog hello world
 
 
-  # Installation
-  Mkelly3
+  ## Table of Contents
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
+  
 
-  # Usage
-  using basic js to say hi
+  ## Installation
+  N/A
 
-  # License
-  Mozilla
+  ## Usage
+  To get new developers familar with the basics
 
-  # Contributing
+  ## License
+  [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+  ISC
+
+  ## Contributing
 
   Morgan Kelly
 
-  # Tests
+  ## Tests
   N/A
 
-  # Questions
+  ## Questions
 
-  * Github username: Mkelly3
-  * Contact Email: mkelly
+  - Github username: [mkelly3](https://github.com/mkelly3)
+  - Contact Email: mkelly11college@gmail.com
 
 

@@ -5,6 +5,7 @@ function generateMarkdown(data) {
 
   ## Project Title
   ${data.projectTitle}
+  <br/>
   ${data.getLicense}
   
   ## Description 
