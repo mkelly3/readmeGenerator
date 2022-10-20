@@ -2,7 +2,8 @@
 const fs = require("fs");
 const util = require("util");
 const inquirer = require("inquirer");
-const generateReadme = require("./utils/generateReadme")
+const generateReadme = require("./utils/generateMarkdown");
+const { async } = require("rxjs");
 const writeFileAsync = util.promisify(fs.writeFile);
 
 // TODO: Create an array of questions for user input
@@ -41,7 +42,7 @@ inquirer
         name: 'install',
       },
       {
-        type: 'checkbox',
+        type: 'list',
         message: 'What badges would you like to display?',
         name: 'badges',
         choices: [
@@ -77,17 +78,24 @@ inquirer
 
   ])
   .then((response) => {
-    console.log(response)
+   writeToFile("generateReadMe.md",response)
   }
   );
 
 }
+// promptUser();
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+async function writeToFile(fileName, data) {
+  console.log(data);
+   await writeFileAsync(fileName,data)
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    // writeToFile()
+    promptUser();
+}
 
 // Function call to initialize app
 init();
