@@ -1,10 +1,8 @@
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `
-
-  ## Project Title
-  ${data.projectTitle}
+  return`${data.projectTitle}
+  
   <br/>
   ${data.getLicense}
   

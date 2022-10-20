@@ -1,12 +1,10 @@
-
-
-  ## Project Title
-  HelloWorld
+Hello World
+  
   <br/>
-  [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
   
   ## Description 
-  This product allows first time coders to consolelog hello world
+  To say hi 
 
 
   ## Table of Contents
@@ -23,11 +21,11 @@
   N/A
 
   ## Usage
-  To get new developers familar with the basics
+  Get first time coders experience
 
   ## License
-  [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
-  ISC
+  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+  Apache 2.0
 
   ## Contributing
 
@@ -39,6 +37,6 @@
   ## Questions
 
   - Github username: [mkelly3](https://github.com/mkelly3)
-  - Contact Email: mkelly11college@gmail.com
+  - Contact Email: mkelly380@gmail.com
 
 
