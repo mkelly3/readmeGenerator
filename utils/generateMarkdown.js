@@ -28,6 +28,7 @@ function generateMarkdown(data) {
 
   ## License
   ${data.getLicense}
+  <br/>
   ${data.license}
 
   ## Contributing

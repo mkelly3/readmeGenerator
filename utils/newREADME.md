@@ -1,7 +1,7 @@
 
   ## Hello World
   
-  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+  [![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
   
   ## Description 
   To say hi to the world
@@ -18,14 +18,15 @@
   
 
   ## Installation
-  N/A
+  Download from github
 
   ## Usage
-  For entry level developers to write their first lines of code
+  For entry level developers to write a basic comand line
 
   ## License
-  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-  GNU GPLv3
+  [![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
+  <br/>
+  Boost Software 1.0
 
   ## Contributing
 
